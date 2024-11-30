@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E90FF; /* Solid blue background */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: linear-gradient(to right, #FF8C00, #FFA500); /* Dark orange to lighter orange */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Logo Section */
+#logo-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Add some spacing */
+    padding: 0;
+}
+
+#logo-container img.logo {
+    height: 80px; /* Set a consistent height */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove unwanted spacing */
+    padding: 0;
+}
+
+/* Main Section */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    background: #FFA500; /* Orange color */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.info label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.info input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.info input:focus {
+    border-color: #FFA500;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+/* Timer */
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #FF4500; /* Dark Orange */
+    background: #FFFACD; /* Light yellow background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Question Styles */
+#questions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.question {
+    margin: 20px 0;
+    text-align: center; /* Center the questions */
+}
+
+.question p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 8px;
+    text-align: left;
+    cursor: pointer;
+}
+
+label input {
+    margin-right: 10px;
+}
+
+/* Submit Button Animation */
+button {
+    background: linear-gradient(to right, #FF4500, #FF8C00); /* Gradient dark to light orange */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(to right, #FF8C00, #FF4500); /* Reverse gradient on hover */
+    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.7);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Result Section */
+#result {
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#result h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FF4500;
+    margin-bottom: 15px;
+}
+
+#score {
+    font-size: 1.3rem;
+    color: #1E90FF; /* Dark blue */
+}
+
+#remark {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hidden Element */
+.hidden {
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

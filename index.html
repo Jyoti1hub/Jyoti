@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI MCQS - Study Aimers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Logo Section -->
+    <div id="logo-container">
+        <img src="Logo.png" alt="Study Aimers Logo" class="logo">
+    </div>
+    
+    <header>
+        <h1>Class 9 Artificial Intelligence MCQS</h1>
+    </header>
+    
+    <main>
+        <form id="quizForm">
+            <!-- Student Info Section -->
+            <div class="info">
+                <label for="name">Student Name:</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="school">School/Institute:</label>
+                <input type="text" name="school" id="school" required>
+                
+                <label for="roll">Roll Number:</label>
+                <input type="number" id="roll" name="roll" required>
+                
+                <button type="button" id="startQuizButton">Start Quiz</button>
+            </div>
+            
+            <!-- Timer and Questions -->
+            <div id="timer" class="hidden">Time Left: 40:00</div>
+            <div id="questions" class="hidden"></div>
+            
+            <!-- Submit Button -->
+            <button type="submit" id="submitQuizButton" class="hidden">Submit</button>
+        </form>
+        
+        <!-- Result Section -->
+        <div id="result" class="hidden">
+            <h2>Quiz Result</h2>
+            <p id="score"></p>
+            <p id="remark"></p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Study Aimers</p>
+    </footer>
+</body>
+</html>
